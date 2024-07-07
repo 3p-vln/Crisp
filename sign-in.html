@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/Crisp/crisp-ico.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New</title>
-  <script type="module" crossorigin src="/Crisp/assets/new-7CzRFvpG.js"></script>
+  <title>Sign In</title>
+  <script type="module" crossorigin src="/Crisp/assets/sign-in-Cp6fGf4C.js"></script>
   <link rel="modulepreload" crossorigin href="/Crisp/assets/useFetch-DucEEeGt.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/stop-preload-lHMBXtTV.js">
   <link rel="modulepreload" crossorigin href="/Crisp/assets/add-to-bag-D9VxPnbD.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/autoplay-CXgkKXRk.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/you-may-also-like-C2s2rXae.js">
-  <link rel="stylesheet" crossorigin href="/Crisp/assets/new-C7uDVE3N.css">
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/just-validate.es-C73wyOde.js">
+  <link rel="stylesheet" crossorigin href="/Crisp/assets/sign-in-Cs3owsI_.css">
 </head>
 
   <body>
@@ -124,53 +122,34 @@
 </header>
 
       <div class="page">
-        <div class="bread-crumbs">
-  <a href="index.html">Home</a> / <a href="#"> Blog </a> /
-  <a href="#"> WHAT TO WEAR...</a>
-</div>
+        <div class="bread-crumbs"><a href="index.html">Home</a> / <a href="#"> Log In Account </a></div>
 
-        <div class="new-baner skeleton">
+        <div class="sign-in">
   <div class="container">
-    <div class="new-baner__content">
-      <h2></h2>
-    </div>
-  </div>
-</div>
+    <div class="sign-in__content">
+      <h2 class="sign-in__title">Create New Customer Account</h2>
 
-        <div class="new">
-          <div class="container">
-            <div class="new__content">
-              <div class="new-info skeleton"></div>
-
-              <div class="adds skeleton">
-  <img src="/Crisp/assets/add1-DWKjXFsX.jpg" alt="" />
-  <img src="/Crisp/assets/add2-DohmcxG7.jpg" alt="" />
-</div>
-
+      <div class="sign-in__form">
+        <form class="form" id="sign-in">
+          <div class="form__newsletter">
+            <div class="form__item">
+              <label for="#email-login" class="form__item-label">E-mail <span>*</span></label>
+              <div class="form__input">
+                <input type="email" class="form__item-input" placeholder="Your e-mail" id="email" onsubmit="event.preventDefault();" />
+              </div>
+            </div>
+            <div class="form__item">
+              <label for="#password" class="form__item-label">Passwrod <span>*</span></label>
+              <div class="form__input">
+                <input type="password" class="form__item-input" placeholder="Your password" id="password" onsubmit="event.preventDefault();" />
+              </div>
+            </div>
+            <div class="form__buttons">
+              <button class="btn black create" type="submit">Log In</button>
+              <a href="#" onclick="history.back();return false;" class="back">back</a>
             </div>
           </div>
-        </div>
-        <div class="you-may-also-like">
-  <div class="container">
-    <div class="you-may-also-like__content">
-      <div class="you-may-also-like__head">
-        <h3 class="you-may-also-like__title">You May Also Like</h3>
-        <div class="swiper-btn">
-          <div class="swiper-btn-prew you-may-also-like__swiper-btn-prew">
-            <svg>
-              <use href="#prew-gray"></use>
-            </svg>
-          </div>
-          <div class="swiper-btn-next you-may-also-like__swiper-btn-next">
-            <svg>
-              <use href="#next-gray"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="you-may-also-like__swiper swiper skeleton">
-        <div class="you-may-also-like__swiper-wrapper swiper-wrapper"></div>
+        </form>
       </div>
     </div>
   </div>

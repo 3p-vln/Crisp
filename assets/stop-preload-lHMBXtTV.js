@@ -1,0 +1,1 @@
+class a{static stop(e=""){const s=document.querySelectorAll("."+e+" img").length,t=new CustomEvent("loadingIsFinished",{detail:{block:e,requiredImagesCount:s}});document.dispatchEvent(t)}}export{a as L};
