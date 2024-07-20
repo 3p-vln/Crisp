@@ -5,12 +5,13 @@
   <link rel="icon" type="image/svg+xml" href="/Crisp/crisp-ico.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Account</title>
-  <script type="module" crossorigin src="/Crisp/assets/cabinet-C1FscDrp.js"></script>
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/search-CNxuQHz5.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/add-to-bag-DdzQOvk1.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/tabs-Dd3JyEtS.js">
+  <script type="module" crossorigin src="/Crisp/assets/cabinet-C2C5JbQ-.js"></script>
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/search-DP2q2jjU.js">
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/pop-up-closer-DNyzttUJ.js">
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/tabs-C4AD9RJJ.js">
   <link rel="modulepreload" crossorigin href="/Crisp/assets/just-validate.es-C73wyOde.js">
-  <link rel="stylesheet" crossorigin href="/Crisp/assets/cabinet-BLR7dH_p.css">
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/stop-preload-lHMBXtTV.js">
+  <link rel="stylesheet" crossorigin href="/Crisp/assets/cabinet-uUNfwbad.css">
 </head>
 
   <body>
@@ -84,7 +85,7 @@
           <a href="sign-up.html" class="create">CREATE AN ACCOUNT</a>
         </div>
         <div class="buy">
-          <div class="buy__likes">
+          <div class="buy__likes" onclick="window.location.href = '/Crisp/cabinet.html#my-wishlist'">
             <svg>
               <use href="#like"></use>
             </svg>
@@ -191,29 +192,54 @@
                 <div class="cabinet__acc-info account-info tabs__item" id="account-information">
   <div class="account-info__title">Account Information</div>
   <div class="account-info__form">
-    <form class="form">
+    <form class="form" id="accountForm">
       <div class="form__item">
         <label for="name">First name <span>*</span></label>
         <div class="form__input">
-          <input type="text" class="form__item-input" placeholder="Your first name" id="name" onsubmit="event.preventDefault();" />
+          <input type="text" class="form__item-input" placeholder="Your first name" id="name" autocomplete="off" />
         </div>
       </div>
       <div class="form__item">
         <label for="surname">Last name <span>*</span></label>
         <div class="form__input">
-          <input type="text" class="form__item-input" placeholder="Your last name" id="surname" onsubmit="event.preventDefault();" />
+          <input type="text" class="form__item-input" placeholder="Your last name" id="surname" autocomplete="off" />
         </div>
       </div>
       <label class="form__agree">
-        <input type="checkbox" autocomplete="false" />
+        <input type="checkbox" id="changeEmailCheckbox" autocomplete="off" />
         <div class="custom-checkbox"></div>
         Change Email
       </label>
+      <div class="form__item" id="emailField" style="display: none">
+        <label for="email">New Email <span>*</span></label>
+        <div class="form__input">
+          <input type="email" class="form__item-input" placeholder="Your new email" id="email" autocomplete="off" />
+        </div>
+      </div>
+      <div class="form__item" id="currentPasswordEmailField" style="display: none">
+        <label for="currentPasswordEmail">Current Password <span>*</span></label>
+        <div class="form__input">
+          <input type="password" class="form__item-input" placeholder="Your current password" id="currentPasswordEmail" autocomplete="off" />
+        </div>
+      </div>
+
       <label class="form__agree">
-        <input type="checkbox" autocomplete="false" />
+        <input type="checkbox" id="changePasswordCheckbox" autocomplete="off" />
         <div class="custom-checkbox"></div>
         Change Password
       </label>
+      <div class="form__item" id="passwordField" style="display: none">
+        <label for="password">New Password <span>*</span></label>
+        <div class="form__input">
+          <input type="password" class="form__item-input" placeholder="Your new password" id="password" autocomplete="off" />
+        </div>
+      </div>
+      <div class="form__item" id="currentPasswordField" style="display: none">
+        <label for="currentPassword">Current Password <span>*</span></label>
+        <div class="form__input">
+          <input type="password" class="form__item-input" placeholder="Your current password" id="currentPassword" autocomplete="off" />
+        </div>
+      </div>
       <div class="form__button">
         <button class="btn black save" type="submit">Save</button>
       </div>
@@ -222,83 +248,92 @@
 </div>
 
                 <div class="cabinet__add-address add-address tabs__item" id="address-book">
-  <div class="add-address__item contact">
-    <div class="add-address__title">Contact Information</div>
-    <div class="contact__form">
-      <form class="form">
+  <form class="form">
+    <div class="add-address__item contact">
+      <div class="add-address__title">Contact Information</div>
+      <div class="contact__form">
         <div class="form__item">
           <label for="name">First name <span>*</span></label>
           <div class="form__input">
-            <input type="text" class="form__item-input" placeholder="Your first name" id="name" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" placeholder="Your first name" id="name" autocomplete="off" />
           </div>
         </div>
         <div class="form__item">
           <label for="surname">Last name <span>*</span></label>
           <div class="form__input">
-            <input type="text" class="form__item-input" placeholder="Your last name" id="surname" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" placeholder="Your last name" id="surname" autocomplete="off" />
           </div>
         </div>
         <div class="form__item">
           <label for="company">Company</label>
           <div class="form__input">
-            <input type="text" class="form__item-input" id="company" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" id="company" autocomplete="off" />
           </div>
         </div>
         <div class="form__item">
           <label for="phone">Phone Number <span>*</span></label>
           <div class="form__input">
-            <input type="tel" class="form__item-input" id="phone" onsubmit="event.preventDefault();" />
+            <input type="tel" class="form__item-input" id="phone" autocomplete="off" />
           </div>
         </div>
         <div class="form__item">
           <label for="fax">Fax</label>
           <div class="form__input">
-            <input type="text" class="form__item-input" id="fax" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" id="fax" autocomplete="off" />
           </div>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
-  <div class="add-address__item address">
-    <div class="add-address__title">Address</div>
-    <div class="address__form">
-      <form class="form">
+    <div class="add-address__item address">
+      <div class="add-address__title">Address</div>
+      <div class="address__form">
         <div class="form__item">
           <label for="street">Street Address <span>*</span></label>
           <div class="form__input">
-            <input type="text" class="form__item-input" id="street" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" id="street" autocomplete="off" />
           </div>
         </div>
         <div class="form__item">
           <label for="country">Country <span>*</span></label>
-          <!-- dropdown -->
-          <div class="form__dropdown drop-down" id="country">
-            <div class="drop-down__select"></div>
-            <div class="drop-down__list">
-              <div class="drop-down__item">Ukraine</div>
-              <div class="drop-down__item">USA</div>
-              <div class="drop-down__item">Canada</div>
+          <div class="form__dropdown">
+            <div class="drop-down" id="country">
+              <div class="drop-down__select"></div>
+              <div class="drop-down__list">
+                <div class="drop-down__item">Ukraine</div>
+                <div class="drop-down__item">USA</div>
+                <div class="drop-down__item">Canada</div>
+              </div>
             </div>
+            <input type="hidden" id="country-hidden" name="country" />
           </div>
         </div>
         <div class="form__item">
           <label for="state">State/Province <span>*</span></label>
-          <!-- dropdown -->
           <div class="form__dropdown drop-down" id="state">
             <div class="drop-down__select"></div>
             <div class="drop-down__list"></div>
+            <input type="hidden" id="state-hidden" name="state" />
           </div>
         </div>
         <div class="form__item">
           <label for="zip">Zip/Postal Code <span>*</span></label>
           <div class="form__input">
-            <input type="text" class="form__item-input" id="zip" onsubmit="event.preventDefault();" />
+            <input type="text" class="form__item-input" id="zip" autocomplete="off" />
           </div>
         </div>
-      </form>
+      </div>
     </div>
+    <button class="add-address__save btn black" type="submit">Save Address</button>
+  </form>
+</div>
+
+                <div class="cabinet__wishlist wishlist tabs__item" id="my-wishlist">
+  <div class="wishlist__all-cards"></div>
+  <div class="wishlist__btns">
+    <button class="wishlist__share btn gray">share wish list</button>
+    <button class="wishlist__update btn gray" onclick="window.location.href = '/Crisp/catalog.html'">update wish list</button>
+    <button class="wishlist__add btn gray">Add all to cart</button>
   </div>
-  <button class="add-address__save btn black" type="submit">Save Adress</button>
 </div>
 
               </div>
@@ -584,12 +619,10 @@
     <path d="M1 2L6 7L11 2" stroke="black" />
   </symbol>
 
-
   <symbol id="close-icon" viewBox="0 0 10 10">
-    <path d="M9.48535 1L1.00007 9.48528" stroke="black"/>
-<path d="M9.48535 9.48535L1.00007 1.00007" stroke="black"/>
-      </symbol>
-
+    <path d="M9.48535 1L1.00007 9.48528" stroke="black" />
+    <path d="M9.48535 9.48535L1.00007 1.00007" stroke="black" />
+  </symbol>
 
   <symbol id="close" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0.849121 1L21.8491 22M21.8491 1L0.849121 22" stroke="#C4C4C4" stroke-width="2" />
@@ -600,10 +633,21 @@
     <path d="M9.69214 8.8418L16.8376 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
     <path d="M16.8358 8.8418L9.69031 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
   </symbol>
+
+  <symbol id="edit-clother" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#E6F1FA" />
+    <path
+      d="M7.97076 18.0001C7.77019 18.0001 7.57271 17.9214 7.42538 17.774C7.20707 17.5557 7.13996 17.2287 7.25412 16.9417L8.79693 13.0847C8.83628 12.9882 8.89413 12.8995 8.96819 12.8262L14.368 7.42641C14.6696 7.12479 15.1572 7.12479 15.4588 7.42641L17.773 9.74063C18.0746 10.0422 18.0746 10.5298 17.773 10.8314L14.6874 13.917C14.3858 14.2186 13.8982 14.2186 13.5966 13.917C13.295 13.6154 13.295 13.1279 13.5966 12.8262L16.1369 10.286L14.9134 9.06256L10.1716 13.8052L9.35543 15.844L11.395 15.0286L11.5084 14.9144L11.2824 14.6884C10.9808 14.3868 10.9808 13.8993 11.2824 13.5977C11.584 13.296 12.0715 13.296 12.3732 13.5977L13.1446 14.3691C13.4462 14.6707 13.4462 15.1582 13.1446 15.4598L12.3732 16.2312C12.2991 16.3053 12.2112 16.3631 12.114 16.4025L8.25695 17.9453C8.16438 17.9823 8.06718 18.0001 7.97076 18.0001Z"
+      fill="black"
+    />
+  </symbol>
+
+  <symbol id="remove-clother" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#E6F1FA" />
+    <path d="M8.84375 8.8418L15.9893 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M15.9863 8.8418L8.84083 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
+  </symbol>
 </svg>
-
-
-
 
 </footer>
 

@@ -8,11 +8,11 @@
   <link rel="icon" type="image/svg+xml" href="/Crisp/crisp-ico.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catalog</title>
-  <script type="module" crossorigin src="/Crisp/assets/catalog-CmYz9U6P.js"></script>
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/search-CNxuQHz5.js">
+  <script type="module" crossorigin src="/Crisp/assets/catalog-B6JATEdW.js"></script>
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/search-DP2q2jjU.js">
   <link rel="modulepreload" crossorigin href="/Crisp/assets/stop-preload-lHMBXtTV.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/shop-some-BOr1vT6S.js">
-  <link rel="stylesheet" crossorigin href="/Crisp/assets/catalog-BzNBwrOy.css">
+  <link rel="modulepreload" crossorigin href="/Crisp/assets/shop-some-DCwdOtxp.js">
+  <link rel="stylesheet" crossorigin href="/Crisp/assets/catalog-DH26nn9C.css">
 </head>
 
 
@@ -87,7 +87,7 @@
           <a href="sign-up.html" class="create">CREATE AN ACCOUNT</a>
         </div>
         <div class="buy">
-          <div class="buy__likes">
+          <div class="buy__likes" onclick="window.location.href = '/Crisp/cabinet.html#my-wishlist'">
             <svg>
               <use href="#like"></use>
             </svg>
@@ -156,62 +156,72 @@
 
             <div class="catalog__inner">
               <div class="catalog__filter-forms">
-                <!-- <div class="used-filters">
+                <div class="used-filters">
                   <div class="used-filters__top">
-                    <h2 class="used-filters-annot">Filter</h2>
+                    <h2 class="used-filters__annot">Filter</h2>
                     <div class="used-filters__reset-box">
-                      <svg class="used-filters__svg">
-                        <use id="#icon-close"></use>
+                      <svg class="used-filters__svg reset-all-filters">
+                        <use href="#close-icon"></use>
                       </svg>
                       <p class="used-filters__reset-text used-filters__reset-text_main">reset all</p>
                     </div>
                   </div>
-                  <h2 class="used-filters__title">Brand:</h2>
+                  <div class="used-filters__brand-box">
+                    <h2 class="used-filters__title">Brand:</h2>
 
-                  <div class="used-filters__reset-box">
-                    <svg class="used-filters__svg">
-                      <use id="#icon-close"></use>
-                    </svg>
-                    <p class="use-filters__value"></p>
-                  </div>
-
-                  <h2 class="used-filters__title">Size:</h2>
-
-                  <div class="used-filters__reset-box">
-                    <svg class="used-filters__svg">
-                      <use id="#icon-close"></use>
-                    </svg>
-                    <div class="used-filters__size-value"></div>
-                  </div>
-
-                  <h2 class="used-filters__title">Dress Length:</h2>
-
-                  <div class="used-filters__reset-box">
-                    <svg class="used-filters__svg">
-                      <use id="#icon-close"></use>
-                    </svg>
-                    <p class="use-filters__value"></p>
-                  </div>
-
-                  <h2 class="used-filters__title">Color:</h2>
-                  <div class="used-filters__reset-box">
-                    <svg class="used-filters__svg">
-                      <use id="#icon-close"></use>
-                    </svg>
-                    <div class="used-filters__color-value"></div>
-                  </div>
-
-                  <h2 class="used-filters__title">Price Range:</h2>
-                  <div class="used-filters__reset-box">
-                    <svg class="used-filters__svg">
-                      <use id="#icon-close"></use>
-                    </svg>
-                    <div class="used-filters__range-value">
-                      <p class="used-filters__range-value-min"></p>
-                      <p class="used-filters__range-value-max"></p>
+                    <div class="used-filters__reset-box">
+                      <p class="used-filters__value used-filters__value_brand"></p>
+                      <svg class="used-filters__svg used-filters__svg_cust reset-brand">
+                        <use href="#close-icon"></use>
+                      </svg>
                     </div>
                   </div>
-                </div> -->
+
+                  <div class="used-filters__size-box">
+                    <h2 class="used-filters__title">Size:</h2>
+
+                    <div class="used-filters__reset-box">
+                      <div class="used-filters__size-value"></div>
+                      <svg class="used-filters__svg used-filters__svg_cust reset-size">
+                        <use href="#close-icon"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="used-filters__length-box">
+                    <h2 class="used-filters__title">Dress Length:</h2>
+
+                    <div class="used-filters__reset-box">
+                      <p class="used-filters__value used-filters__value_length"></p>
+                      <svg class="used-filters__svg used-filters__svg_cust reset-length">
+                        <use href="#close-icon"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="used-filters__color-box">
+                    <h2 class="used-filters__title">Color:</h2>
+                    <div class="used-filters__reset-box">
+                      <div class="used-filters__color-value"></div>
+                      <svg class="used-filters__svg used-filters__svg_cust reset-color">
+                        <use href="#close-icon"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="used-filters__price-box">
+                    <h2 class="used-filters__title">Price Range:</h2>
+                    <div class="used-filters__reset-box">
+                      <svg class="used-filters__svg used-filters__svg_cust">
+                        <use href="#close-icon"></use>
+                      </svg>
+                      <div class="used-filters__range-value">
+                        <p class="used-filters__value used-filters__range-value-min"></p>
+                        <p class="used-filters__value used-filters__range-value-max"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="catalog__filter-form form accordeon">
   <div class="accordeon__button">
     <h3 class="accordeon__title">Brand</h3>
@@ -259,7 +269,7 @@
 
                 <div class="catalog__filter-form form accordeon">
   <div class="accordeon__button">
-    <h3 class="accordeon__title">Size (Inches)</h3>
+    <h3 class="accordeon__title accordeon__title_size">Size (Inches)</h3>
 
     <div class="accordeon__button-spans">
       <span class="accordeon__show-button"></span>
@@ -267,105 +277,119 @@
     </div>
   </div>
   <div class="accordeon__list sizes-list">
-    <label for="sizes__list-item_osfa" class="sizes-list__item">
+    <label for="sizes__list-item_osfa" class="sizes-list__item" data-size="osfa">
       <input type="radio" id="sizes__list-item_osfa" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      osfa
+      <p>osfa</p>
     </label>
-    <label for="sizes__list-item_w26" class="sizes-list__item">
+    <label for="sizes__list-item_w26" class="sizes-list__item" data-size="w26">
       <input type="radio" id="sizes__list-item_w26" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w26
+      <p>w26</p> 
     </label>
-    <label for=" sizes__list-item_w27" class="sizes-list__item">
+    <label for="sizes__list-item_w27" class="sizes-list__item" data-size="w27"> 
       <input type="radio" id=" sizes__list-item_w27" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w27
+      <p>w27</p> 
     </label>
-    <label for=" sizes__list-item_w28" class="sizes-list__item">
+    <label for="sizes__list-item_w28" class="sizes-list__item" data-size="w28">
       <input type="radio" id=" sizes__list-item_w28" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w28
+      <p>w28</p>  
     </label>
-    <label for=" sizes__list-item_w29" class="sizes-list__item">
+    <label for="sizes__list-item_w29" class="sizes-list__item" data-size="w29">
       <input type="radio" id=" sizes__list-item_w29" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w29
+      <p>w29</p>
     </label>
-    <label for=" sizes__list-item_w30" class="sizes-list__item">
+    <label for="sizes__list-item_w30" class="sizes-list__item" data-size="w30">
       <input type="radio" id=" sizes__list-item_w30" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w30
+      <p>w30</p>
+      
     </label>
-    <label for=" sizes__list-item_w31" class="sizes-list__item">
+    <label for="sizes__list-item_w31" class="sizes-list__item" data-size="w31">
       <input type="radio" id=" sizes__list-item_w31" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w31
+      <p>w31</p>
+      
     </label>
-    <label for=" sizes__list-item_w32" class="sizes-list__item">
+    <label for="sizes__list-item_w32" class="sizes-list__item" data-size="w32">
       <input type="radio" id=" sizes__list-item_w32" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w32
+      <p>w32</p>
+      
     </label>
-    <label for=" sizes__list-item_w33" class="sizes-list__item">
+    <label for="sizes__list-item_w33" class="sizes-list__item" data-size="w33">
       <input type="radio" id=" sizes__list-item_w33" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w33
+      <p>w33</p>
+      
     </label>
-    <label for=" sizes__list-item_w34" class="sizes-list__item">
+    <label for="sizes__list-item_w34" class="sizes-list__item" data-size="w34">
       <input type="radio" id=" sizes__list-item_w34" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w34
+      <p>w34</p>
+      
     </label>
-    <label for=" sizes__list-item_w35" class="sizes-list__item">
+    <label for="sizes__list-item_w35" class="sizes-list__item" data-size="w35">
       <input type="radio" id=" sizes__list-item_w35" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w35
+      <p>w35</p>
+      
     </label>
-    <label for=" sizes__list-item_w36" class="sizes-list__item">
+    <label for="sizes__list-item_w36" class="sizes-list__item" data-size="w36">
       <input type="radio" id=" sizes__list-item_w36" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w36
+      <p>w36</p>
+      
     </label>
-    <label for=" sizes__list-item_w38" class="sizes-list__item">
+    <label for="sizes__list-item_w38" class="sizes-list__item" data-size="w37">
       <input type="radio" id=" sizes__list-item_w38" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w38
+      <p>w38</p>
+      
     </label>
-    <label for=" sizes__list-item_w40" class="sizes-list__item">
+    <label for="sizes__list-item_w40" class="sizes-list__item" data-size="w40">
       <input type="radio" id=" sizes__list-item_w40" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w40
+      <p>w40</p>
+      
     </label>
-    <label for=" sizes__list-item_w42" class="sizes-list__item">
+    <label for="sizes__list-item_w42" class="sizes-list__item" data-size="w42">
       <input type="radio" id=" sizes__list-item_w42" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w42
+      <p>w42</p>
+      
     </label>
-    <label for=" sizes__list-item_w44" class="sizes-list__item">
+    <label for="sizes__list-item_w44" class="sizes-list__item" data-size="w44">
       <input type="radio" id=" sizes__list-item_w44" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w44
+      <p>w44</p>
+      
     </label>
-    <label for=" sizes__list-item_w46" class="sizes-list__item">
+    <label for="sizes__list-item_w46" class="sizes-list__item" data-size="w46">
       <input type="radio" id=" sizes__list-item_w46" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w46
+      <p>w46</p>
+      
     </label>
-    <label for=" sizes__list-item_w48" class="sizes-list__item">
+    <label for="sizes__list-item_w48" class="sizes-list__item" data-size="w48">
       <input type="radio" id=" sizes__list-item_w48" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w48
+      <p>w48</p>
+      
     </label>
-    <label for=" sizes__list-item_w50" class="sizes-list__item">
+    <label for="sizes__list-item_w50" class="sizes-list__item" data-size="w50">
       <input type="radio" id=" sizes__list-item_w50" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w50
+      <p>w50</p>
+      
     </label>
-    <label for=" sizes__list-item_w52" class="sizes-list__item">
+    <label for="sizes__list-item_w52" class="sizes-list__item" data-size="w52">
       <input type="radio" id=" sizes__list-item_w52" name=" sizes__list-item" />
       <span class="custom-radio"></span>
-      w52
+      <p>w52</p>
     </label>
   </div>
 </div>
@@ -415,7 +439,7 @@
 
                 <div class="catalog__filter-form form accordeon">
   <div class="accordeon__button">
-    <h3 class="accordeon__title">Color</h3>
+    <h3 class="accordeon__title accordeon__title_color">Color</h3>
 
     <div class="accordeon__button-spans">
       <span class="accordeon__show-button"></span>
@@ -517,6 +541,10 @@
               </div>
 
               <div class="catalog__shop">
+                <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='24px'%20height='24px'%20viewBox='0%200%2024%2024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eIconly/Curved/Filter%3c/title%3e%3cg%20id='Iconly/Curved/Filter'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3cg%20id='Filter'%20transform='translate(4.000000,%204.000000)'%20stroke='%23000000'%20stroke-width='1.5'%3e%3cline%20x1='7.14366842'%20y1='13.8828263'%20x2='0.671142105'%20y2='13.8828263'%20id='Stroke-1'%3e%3c/line%3e%3cpath%20d='M11.2049684,13.8837211%20C11.2049684,15.9255105%2011.8858632,16.6055105%2013.9267579,16.6055105%20C15.9676526,16.6055105%2016.6485474,15.9255105%2016.6485474,13.8837211%20C16.6485474,11.8419316%2015.9676526,11.1619316%2013.9267579,11.1619316%20C11.8858632,11.1619316%2011.2049684,11.8419316%2011.2049684,13.8837211%20Z'%20id='Stroke-3'%3e%3c/path%3e%3cline%20x1='10.1765579'%20y1='3.39418421'%20x2='16.6481895'%20y2='3.39418421'%20id='Stroke-5'%3e%3c/line%3e%3cpath%20d='M6.11525789,3.39284211%20C6.11525789,1.35194737%205.43436316,0.671052632%203.39346842,0.671052632%20C1.35167895,0.671052632%200.670784211,1.35194737%200.670784211,3.39284211%20C0.670784211,5.43463158%201.35167895,6.11463158%203.39346842,6.11463158%20C5.43436316,6.11463158%206.11525789,5.43463158%206.11525789,3.39284211%20Z'%20id='Stroke-7'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class="catalog__filter-svg" />
+                <svg class="catalog__filter-close-filters">
+                  <use href="#close-icon"></use>
+                </svg>
                 <div class="catalog__shop-dropdowns">
                   <div class="content-bottom__dropdown dropdown">
                     <div class="dropdown__box">
@@ -548,6 +576,7 @@
                     </ul>
                   </div>
                 </div>
+
                 <div class="shop-some__items catalog__cards">
                   <button class="btn shop-some__load">Load more</button>
                 </div>
@@ -850,12 +879,10 @@
     <path d="M1 2L6 7L11 2" stroke="black" />
   </symbol>
 
-
   <symbol id="close-icon" viewBox="0 0 10 10">
-    <path d="M9.48535 1L1.00007 9.48528" stroke="black"/>
-<path d="M9.48535 9.48535L1.00007 1.00007" stroke="black"/>
-      </symbol>
-
+    <path d="M9.48535 1L1.00007 9.48528" stroke="black" />
+    <path d="M9.48535 9.48535L1.00007 1.00007" stroke="black" />
+  </symbol>
 
   <symbol id="close" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0.849121 1L21.8491 22M21.8491 1L0.849121 22" stroke="#C4C4C4" stroke-width="2" />
@@ -866,10 +893,21 @@
     <path d="M9.69214 8.8418L16.8376 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
     <path d="M16.8358 8.8418L9.69031 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
   </symbol>
+
+  <symbol id="edit-clother" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#E6F1FA" />
+    <path
+      d="M7.97076 18.0001C7.77019 18.0001 7.57271 17.9214 7.42538 17.774C7.20707 17.5557 7.13996 17.2287 7.25412 16.9417L8.79693 13.0847C8.83628 12.9882 8.89413 12.8995 8.96819 12.8262L14.368 7.42641C14.6696 7.12479 15.1572 7.12479 15.4588 7.42641L17.773 9.74063C18.0746 10.0422 18.0746 10.5298 17.773 10.8314L14.6874 13.917C14.3858 14.2186 13.8982 14.2186 13.5966 13.917C13.295 13.6154 13.295 13.1279 13.5966 12.8262L16.1369 10.286L14.9134 9.06256L10.1716 13.8052L9.35543 15.844L11.395 15.0286L11.5084 14.9144L11.2824 14.6884C10.9808 14.3868 10.9808 13.8993 11.2824 13.5977C11.584 13.296 12.0715 13.296 12.3732 13.5977L13.1446 14.3691C13.4462 14.6707 13.4462 15.1582 13.1446 15.4598L12.3732 16.2312C12.2991 16.3053 12.2112 16.3631 12.114 16.4025L8.25695 17.9453C8.16438 17.9823 8.06718 18.0001 7.97076 18.0001Z"
+      fill="black"
+    />
+  </symbol>
+
+  <symbol id="remove-clother" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#E6F1FA" />
+    <path d="M8.84375 8.8418L15.9893 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M15.9863 8.8418L8.84083 15.9873" stroke="black" stroke-width="1.6" stroke-linecap="round" />
+  </symbol>
 </svg>
-
-
-
 
 </footer>
 
