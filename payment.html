@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/Crisp/crisp-ico.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up</title>
-  <script type="module" crossorigin src="/Crisp/assets/sign-up-DGtyISwq.js"></script>
+  <title>Payment</title>
+  <script type="module" crossorigin src="/Crisp/assets/payment-DaXa6Ggm.js"></script>
   <link rel="modulepreload" crossorigin href="/Crisp/assets/useFetch-CPNCRhkP.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/search-DbR8hu1i.js">
-  <link rel="modulepreload" crossorigin href="/Crisp/assets/pop-up-closer-BmjNRtmD.js">
   <link rel="modulepreload" crossorigin href="/Crisp/assets/just-validate.es-C73wyOde.js">
   <link rel="modulepreload" crossorigin href="/Crisp/assets/add-to-bag-D7o2r1jJ.js">
-  <link rel="stylesheet" crossorigin href="/Crisp/assets/sign-up-DuDoEyhA.css">
+  <link rel="stylesheet" crossorigin href="/Crisp/assets/payment-CCKFbpvu.css">
 </head>
 
   <body>
@@ -124,67 +122,219 @@
 </header>
 
       <div class="page">
-        <div class="bread-crumbs"><a href="index.html">Home</a> / <a href="#"> Create New Customer Account </a></div>
+        <section class="payment">
+          <div class="container">
+            <div class="bread-crumbs"><a href="index.html">Home</a> / <a href="#"> Create order </a></div>
 
-        <div class="sign-up">
-  <div class="container">
-    <div class="sign-up__content">
-      <h2 class="sign-up__title">Create New Customer Account</h2>
-
-      <div class="sign-up__form">
-        <form class="form" id="sign-up">
-          <div class="form__personal-info">
-            <h3 class="form__title">Personal Information</h3>
-            <div class="form__item">
-              <label for="email-sign-up">First name <span>*</span></label>
-              <div class="form__input">
-                <input type="text" class="form__item-input" placeholder="Your first name" id="name-sign-up" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form__item">
-              <label for="email-sign-up">Last name <span>*</span></label>
-              <div class="form__input">
-                <input type="text" class="form__item-input" placeholder="Your last name" id="surname-sign-up" autocomplete="off" />
-              </div>
-            </div>
-            <label class="form__agree">
-              <input type="checkbox" autocomplete="false" />
-              <div class="custom-checkbox"></div>
-              Sign Up for Newsletter
-            </label>
-          </div>
-
-          <div class="form__newsletter">
-            <h3 class="form__title">Sign Up for Newsletter</h3>
-            <div class="form__item">
-              <label for="#email-login" class="form__item-label">E-mail <span>*</span></label>
-              <div class="form__input">
-                <input type="email" class="form__item-input" placeholder="Your e-mail" id="email" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form__item">
-              <label for="#password" class="form__item-label">Passwrod <span>*</span></label>
-              <div class="form__input">
-                <input type="password" class="form__item-input" placeholder="Your password" id="password" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form__item">
-              <label for="#confirm-password" class="form__item-label">Confirm Passwrod <span>*</span></label>
-              <div class="form__input">
-                <input type="password" class="form__item-input" placeholder="Your password" id="confirm-password" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form__buttons">
-              <button class="btn black create" type="submit">create an account</button>
-              <a href="#" onclick="history.back();return false;" class="back">back</a>
-            </div>
-          </div>
-        </form>
+            <div class="select-box">
+  <div class="select-box__top">
+    <div class="select-box__figures active-figure">
+      <div class="select-box__first-first-line line"></div>
+      <div class="circle select-box__first-circle select-box__first-circle_first">
+        <svg class="select-box__svg">
+          <use href="#checked"></use>
+        </svg>
       </div>
+      <div class="select-box__first-second-line line"></div>
     </div>
+    <div class="select-box__figures">
+      <div class="select-box__second-first-line line"></div>
+      <div class="circle select-box__second-circle select-box__second-circle_second">
+        <p class="circle__number">2</p>
+      </div>
+      <div class="select-box__second-second-line line"></div>
+    </div>
+  </div>
+
+  <div class="select-box__text-box">
+    <p class="select-box__text">Shipping</p>
+    <p class="select-box__text">Review & Payments</p>
   </div>
 </div>
 
+            <div class="payment__inner">
+              <div class="payment__forms">
+                <div class="payment__forms-login">
+                  <form class="form" id="ship-adress">
+                    <h2 class="form__title">Shipping Address</h2>
+                    <div class="form__top">
+                      <div class="form__item">
+                        <label for="#email-login" class="form__item-label">E-mail adress <span>*</span></label>
+                        <div class="form__input">
+                          <input type="email" class="form__item-input" placeholder="roni_cost@example.com" id="email-login" autocomplete="off" />
+                        </div>
+                      </div>
+                      <div class="form__item">
+                        <label for="#password" class="form__item-label">Passwrod <span>*</span></label>
+                        <div class="form__input">
+                          <input type="password" class="form__item-input" placeholder="******************" id="password" autocomplete="off" />
+                        </div>
+                      </div>
+                      <div class="form__item">
+                        <label for="#zip-code" class="form__item-label">Zip/Postal Code </label>
+                        <div class="form__input">
+                          <input type="password" class="form__item-input" id="zip-code" autocomplete="off" />
+                        </div>
+                      </div>
+
+                      <p class="form__log-text">You already have an account with us. Sign in or continue as guest.</p>
+
+                      <!-- <div class="form__buttons">
+                      <button class="btn black create" type="submit">Log In</button>
+                      <a href="#" onclick="history.back();return false;" class="back">back</a>
+                    </div> -->
+
+                      <div class="form__login-box">
+                        <button class="btn black create" type="submit">Log In</button>
+                        <a href="#" class="form__recov-link">Forgot Your Password?</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="payment__forms-adress">
+                  <form class="form adress-form" id="adress-form">
+                    <div class="form__bottom">
+                      <div class="form__item">
+                        <label for="#first-name" class="form__item-label">First Name <span>*</span></label>
+                        <div class="form__input">
+                          <input type="text" class="form__item-input first-name" id="first-name" autocomplete="off" />
+                        </div>
+                      </div>
+
+                      <div class="form__item">
+                        <label for="#last-name" class="form__item-label">Last Name <span>*</span></label>
+                        <div class="form__input">
+                          <input type="text" class="form__item-input last-name" id="last-name" autocomplete="off" />
+                        </div>
+                      </div>
+
+                      <div class="form__item">
+                        <label for="#company" class="form__item-label">Company</label>
+                        <div class="form__input">
+                          <input type="text" class="form__item-input company" id="company" autocomplete="off" />
+                        </div>
+                      </div>
+                      <div class="form__item">
+                        <label for="#adress" class="form__item-label">Street Adress <span>*</span></label>
+                        <div class="form__input form__input_adress">
+                          <input type="text" class="form__item-input adress1" id="adress1" autocomplete="off" />
+                          <input type="text" class="form__item-input adress2" id="adress2" autocomplete="off" />
+                          <input type="text" class="form__item-input adress3" id="adress3" autocomplete="off" />
+                        </div>
+                      </div>
+
+                      <div class="form__item">
+                        <label for="#country" class="form__item-label">Country <span>*</span></label>
+                        <div class="form__input">
+                          <input type="text" class="form__item-input country" id="country" autocomplete="off" />
+                        </div>
+                      </div>
+
+                      <div class="form__item">
+                        <label for="#country" class="form__item-label">State/Province <span>*</span></label>
+
+                        <div class="form__input">
+                          <div class="dropdown">
+                            <div class="dropdown__box" id="select-region">
+                              <p class="dropdown__text">Please select a region, state or province</p>
+                              <svg class="dropdown__svg-arrow">
+                                <use href="#arrow-down"></use>
+                              </svg>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                              <li class="dropdown__menu-item">Izmail</li>
+                              <li class="dropdown__menu-item">Barcelona</li>
+                              <li class="dropdown__menu-item">Portu</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="form__methods">
+                  <h2 class="form__title">Shipping Methods</h2>
+                  <div class="pay-method">
+                    <div class="pay-method__box">
+                      <div class="pay-method__price">
+                        <div class="pay-method__check"></div>
+                        <p class="pay-method__number">$5.00</p>
+                      </div>
+
+                      <p class="pay-method__info">Fixed</p>
+                      <p class="pay-method__info">Flat Rate</p>
+                    </div>
+
+                    <div class="pay-method__box">
+                      <div class="pay-method__price">
+                        <div class="pay-method__check"></div>
+                        <p class="pay-method__number">$10.00</p>
+                      </div>
+
+                      <p class="pay-method__info">Table Rate</p>
+                      <p class="pay-method__info">Best Way</p>
+                    </div>
+                  </div>
+
+                  <div class="form__buttons">
+                    <button class="btn black create submit-adress" type="submit" form="adress-form">Next</button>
+                    <a href="#" class="back">back</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="response">
+                <h2 class="form__title">Payment Method:</h2>
+                <h3 class="response__title">Check / Money order</h3>
+                <div class="response__info">
+                  <div class="response__checking-box">
+                    <label for="checking">
+                      <input type="radio" id="checking" name="checking" />
+                      <span class="custom-radio"></span>
+                    </label>
+                    <p class="response__ckecking-text">My billing and shipping address are the same</p>
+                  </div>
+
+                  <div class="response__info-user">
+                    <div class="response__info-user-data">
+                      <p class="response__info-text user-name"></p>
+                      <p class="response__info-text user-last-name"></p>
+                    </div>
+                    <p class="response__info-text user-adress"></p>
+                    <p class="response__info-text user-region"></p>
+                    <p class="response__info-text user-country"></p>
+                    <p class="response__info-text user-company"></p>
+                    <p class="response__info-text user-tel"></p>
+                  </div>
+
+                  <div class="form__buttons">
+                    <button class="btn black create submit-adress" type="submit" form="adress-form">Place Order</button>
+                    <button class="back">back</button>
+                  </div>
+                </div>
+                <h2 class="form__title">Apply Discount Code</h2>
+
+                <div class="discount__input-box">
+                  <label for="discount-code"></label>
+                  <input class="discount__input" type="text" id="discount-code" placeholder="Enter discount code" />
+                  <button class="discount__button">Apply Discount</button>
+                </div>
+              </div>
+
+              <div class="order-summary-container">
+                <h2 class="order-summary-title">Order Summary</h2>
+                <h3 class="order-summary-total"></h3>
+                <h3 class="order-summary-count"></h3>
+                <div id="cart-items-container"></div>
+              </div>
+
+              <div class="bag__list"></div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer class="footer">
   <div class="footer__advantage">
