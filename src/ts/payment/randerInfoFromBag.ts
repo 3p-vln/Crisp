@@ -1,7 +1,7 @@
 import { getElement, getElements } from '../composables/useCallDom';
 import { AddToBag } from '../one-product/add-to-bag';
 import { Cart, CartItem } from './cart';
-import { paymentMethod } from './paymentMethod';
+
 
 export class RenderInfoFromBag extends AddToBag {
   countAllProducts: HTMLElement | null;
